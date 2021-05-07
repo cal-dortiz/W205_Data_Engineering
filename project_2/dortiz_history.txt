@@ -1,0 +1,846 @@
+    1  ls
+    2  mkdir w205
+    3  ls
+    4  cd w205
+    5  git clone https://github.com/mids-w205-de-sola/course-content-fall2020.git
+    6  ls
+    7  cd course-content-fall2020
+    8  ls
+    9  git status
+   10  cd w205
+   11  cd assignment-1-cal-dortiz
+   12  git status
+   13  git commit -m "<Added Skills, Experiences, and Competencies for Data Engineers>"
+   14  git push origin assignment-1-cal-dortiz
+   15  git status
+   16  cd ~/w205
+   17  git clone https://github.com/mids-w205-de-sola/assignment-1-cal-dortiz.git
+   18  cd assignment-1-cal-dortiz
+   19  git branch assignment-1-cal-dortiz
+   20  git checkout assignment-1-cal-dortiz
+   21  git status
+   22  git add README.md
+   23  git status
+   24  git commit -m "<Update to Section 2. Added skills, experience, and competencies companies are looking for in Data Engineers>"
+   25  git status
+   26  git commit -m "<Update to Section 2. Added skills, experience, and competencies companies are looking for in Data Engineers>"
+   27  git config --global user.email "djortiz@berkeley.edu"
+   28  git config --global user.name "Dan Ortiz"
+   29  git commit -m "<Update to Section 2. Added skills, experience, and competencies companies are looking for in Data Engineers>"
+   30  status
+   31  git status
+   32  git remote
+   33  git push origin assignment-1-cal-dortiz
+   34  git status
+   35  git add README.md
+   36  git status
+   37  git add README.md
+   38  git status
+   39  Git commit -m "<Added Skills, Experience and Competencies for Data Engineers>"
+   40  git status
+   41  git commit -m <Added Skills, Experience and Competencies for Data Engineers>"
+   42  git status
+   43  end
+   44  git status
+   45  cd w205/project-1-cal-dortiz
+   46  git status
+   47  git add dortiz_project_1.ipynb
+   48  git status
+   49  git commit -m "Initial format of notebook"
+   50  git status
+   51  cd
+   52  cd w205
+   53  git clone https://github.com/mids-w205-de-sola/project-1-cal-dortiz.git
+   54  cd project-1-cal-dortiz
+   55  ls
+   56  README.md
+   57  git branch project-1-cal-dortiz
+   58  git checkout project-1-cal-doritz
+   59  git status
+   60  git branch project-1-cal-dortiz
+   61  git status
+   62  bit branch
+   63  git branch
+   64  git checkout project-1-cal-dortiz
+   65  git status
+   66  clean
+   67  clear
+   68  git status
+   69  ls
+   70  README.md
+   71  README
+   72  jupyter notebook
+   73  cd q205/project-1-dortiz
+   74  cd w205
+   75  cd project-1-dortiz
+   76  cd project-1-cal-dortiz
+   77  git status
+   78  git commit -m "Completion of the Initial Queries"
+   79  git add dortiz_project_1.ipynb
+   80  git status
+   81  git commit -m "Completion of the Initial Queries"
+   82  git status
+   83  cd w205/project-1-cal-dortiz
+   84  git status
+   85  git add djortiz_project_1.ipynb
+   86  git add dortiz_project_1.ipynb
+   87  git status
+   88  git commit -m "Added and Answerd Question 4"
+   89  git status
+   90  git add dortiz_project_1.ipynb
+   91  git status
+   92  git commit -m "Update tables to Markdown from image"
+   93  git status
+   94  cd w205/djortiz-assignment-1
+   95  cd w205
+   96  cd project-1-cal-dortiz
+   97  git status
+   98  git add dortiz_project_1.ipynb
+   99  git status
+  100  git commit -m "Completed Question 5"
+  101  git status
+  102  bq query --use_legacy_sql=false 'SELECT a.* FROM bigquery-public-data.san_francisco.bikeshare_trips a JOIN (SELECT start_date, bike_number, COUNT(*) FROM bigquery-piblic-data.san_francisco.bikeshare_trips GROUP BY start_date, bike_number HAVING COUNT(*) >1) b ON a.start_date = b.start_date AND a.bike_number = b.bike_number ORDER BY a.start_date'
+  103  bq query --use_legacy_sql=false 'SELECT a.*
+  104  FROM bigquery-public-data.san_francisco.bikeshare_trips a
+  105      JOIN 
+  106         (SELECT start_date, 
+  107                 bike_number, 
+  108                 COUNT(*)
+  109          FROM bigquery-public-data.san_francisco.bikeshare_trips 
+  110          GROUP BY start_date, bike_number
+  111          HAVING count(*) > 1 ) b
+  112      ON a.start_date = b.start_date
+  113      AND a.bike_number = b.bike_number
+  114      ORDER BY a.start_date
+  115  bq query --use_legacy_sql=false ('
+  116  bq query --use_legacy_sql=false ('SELECT a.*
+  117  bq query --use_legacy_sql=false 'SELECT a.*
+  118  FROM bigquery-public-data.san_francisco.bikeshare_trips a
+  119      JOIN 
+  120         (SELECT start_date, 
+  121                 bike_number, 
+  122                 COUNT(*)
+  123          FROM bigquery-public-data.san_francisco.bikeshare_trips 
+  124          GROUP BY start_date, bike_number
+  125          HAVING count(*) > 1 ) b
+  126      ON a.start_date = b.start_date
+  127      AND a.bike_number = b.bike_number
+  128      ORDER BY a.start_date
+  129  bq query --use_legacy_sql=false 'SELECT a.* FROM bigquery-public-data.san_francisco.bikeshare_trips a JOIN (SELECT start_date, bike_number, COUNT(*) FROM bigquery-public-data.san_francisco.bikeshare_trips GROUP BY start_date, bike_number HAVING count(*) > 1 ) b ON a.start_date = b.start_date AND a.bike_number = b.bike_number ORDER BY a.start_date'
+  130  cd w205
+  131  cd project-1-cal-doritz
+  132  cd project-1-cal-dortiz
+  133  git status
+  134  git add dortiz_project_1.ipynb
+  135  git status
+  136  git commit -m "Add SQL code to first challenge problem"
+  137  clear
+  138  git status
+  139  git add dortiz_project_1.ipynb
+  140  git commit -m "Bonus Q2 and Formatting"
+  141  git status
+  142  cd
+  143  bq query --use_legacy_sql_false '    #standardSQL'
+  144  bq query --use_legacy_sql_false 'SELECT COUNT(*) FROM (SELECT DISTINCT trip_id, FROM bigquery-public-data.san_francisco.bikeshare_trips'
+  145  bq query --use_legacy_sql=false 'SELECT COUNT(*) FROM (SELECT DISTINCT trip_id, FROM bigquery-public-data.san_francisco.bikeshare_trips'
+  146  bq query --use_legacy_sql=false 'SELECT COUNT(*) FROM (SELECT DISTINCT trip_id, FROM bigquery-public-data.san_francisco.bikeshare_trips)'
+  147  bq query --use_legacy_sql=false '    #standardSQL'
+  148  q
+  149  bq query --use_legacy_sql=false '    #standardSQL'
+  150  clear
+  151  bq query --use_legacy_sql=false 'SELECT a.*
+  152  FROM bigquery-public-data.san_francisco.bikeshare_trips a
+  153  JOIN (SELECT start_date,
+  154  bike_number,
+  155  COUNT(*)
+  156  FROM bigquery-public-data.san_francisco.bikeshare_trips
+  157  GROUP BY start_date, bike_number
+  158  HAVING COUNT(*) > 1) b
+  159  ON a.start_date = b.start_date
+  160  AND a.bike_number = b.bike_number
+  161  ORDER BY a.start_date
+  162  q
+  163  docker ps
+  164  docker run -d --names redis redis
+  165  docker run -d --name redis redis
+  166  docker ps
+  167  docker run -d --name redis1 -p 6369:6379 redis
+  168  docker ps
+  169  clear
+  170  ls
+  171  docker ps
+  172  docker remov -f redis1
+  173  docker rm -f redis1
+  174  docker ps
+  175  docker rm -f redis
+  176  docker ps
+  177  docker rm -f flamboyant_vaughan
+  178  docker ps
+  179  clear
+  180  cd w205/week-5-in-class
+  181  cp 
+  182  cp ~
+  183  clear
+  184  cp ~course-content-fall2020/05-Storing-Data-II/example-0-docker-compose.yml docker-control.yml
+  185  cp ~/course-content-fall2020/05-Storing-Data-II/example-0-docker-compose.yml docker-control.yml
+  186  ---
+  187  version: '2'
+  188  services:
+  189  docker-compose down
+  190  clear
+  191  docker-compose ps
+  192  docker ps
+  193  docker-compose 
+  194  docke-compose up -d
+  195  docker-compose up -d
+  196  docker-compose
+  197  cd
+  198  docker-compose
+  199  docker ps
+  200  cd w205
+  201  docker-compose
+  202  clear
+  203  docker-compose
+  204  docker compose
+  205  docker --help
+  206  cd week-5-in-class
+  207  docker-compose
+  208  ls
+  209  docker-compose up
+  210  dockerclear
+  211  clear
+  212  docker-compose
+  213  docker-compose up
+  214  docker-compose
+  215  docker compose 
+  216  docker-compose 
+  217  clear
+  218  docker-compose
+  219  cd
+  220  sudo pip install docker-compose
+  221  docker-compose
+  222  sudo apt-get install docker-compose
+  223  docker-compose
+  224  clear
+  225  cd w205
+  226  cd week-5-in-class
+  227  docker compose
+  228  docker-compose
+  229  docker-compose up
+  230  cd 250f
+  231  cd project-1-cal-dortiz
+  232  cd w205
+  233  cd project-1-cal-dortiz
+  234  git status
+  235  git add dortiz_project_1_part_3.ipynb
+  236  git commit -m"Update to question 3"
+  237  git pull course-content-fall2020
+  238  ls
+  239  cd W205
+  240  cd w205
+  241  ls
+  242  git pull course-content-fall2020
+  243  ls
+  244  git status
+  245  cd course-content-fall2020
+  246  git status
+  247  git pull
+  248  mkdir kafka
+  249  cd w205
+  250  cd project-2-cal-dortiz
+  251  docker-compose up -d
+  252  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  253  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replicaiton-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  254  docker-compose down
+  255  docker-compose up -d
+  256  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replicaiton-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  257  docker-compose exec cloudera hadoop fs -ls /tmp/
+  258  docker-compose down
+  259  docker-compose up -d
+  260  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  261  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replicaiton-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  262  docker-compose down
+  263  docker compose up -d
+  264  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replicaiton-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  265  docker-compose exec kafka   --create   --topic tests   --partitions 1   --replication-factor 1  --if-not-exists   --zookeeper zookeeper:32181
+  266  docker down
+  267  docker-compose down
+  268  cd w205
+  269  cd project-1-cal-dortiz
+  270  git status
+  271  git add dortiz_project_1_part_3.ipynb
+  272  git commit -m"Updated and answered question 2 of part 3"
+  273  cd tutorials
+  274  git pul
+  275  git pull
+  276  cd
+  277  git clone https://github.com/mids-w205-de-sola/course-content-fall2020.git
+  278  cd w205
+  279  cd project-1-cal-dortiz
+  280  git status
+  281  git add dortiz_project_1_part_3.ipynb
+  282  git commit -m"First Release - Define comuter trips"
+  283  cd w205
+  284  cd project-1-cal-dortiz
+  285  git status
+  286  git add README.md
+  287  git commit -m"Updated reccomendations, Proofed the contents"
+  288  git status
+  289  git add dortiz_project_1_part_3.ipynb
+  290  git status
+  291  git commit -m"Updated percent ridership at second and townsend. Proofed text"
+  292  cd w205
+  293  cd project-1-cal-dortiz
+  294  git status
+  295  git add README.md
+  296  git commit -m"Inital release of updated README file"
+  297  cd w205
+  298  cd project-1-cal-dortiz
+  299  git status
+  300  git add dortiz_project_1.ipynb
+  301  git commit -m"Proof text"
+  302  git status
+  303  git push project-1-cal-dortiz
+  304  cd
+  305  cd w205
+  306  git push project-1-cal-dortiz
+  307  cd project-1-cal-dortiz
+  308  git push
+  309  git push origin project-1-cal-dortiz
+  310  git status
+  311  cd w205
+  312  cd project-1-cal-dortiz
+  313  git status
+  314  git add README.md
+  315  git commit -m"Update reccomendaitons and spell check"
+  316  cd w295/week-5-in-class
+  317  cd w205
+  318  cd week-5-in-class
+  319  docker-compose ps
+  320  docker-compose down
+  321  docker-compose ps
+  322  cd
+  323  cd course-content-fall2020
+  324  ls
+  325  cd 06-Transforming-Streaming-Data
+  326  cd 06-Transforming-Data
+  327  ls
+  328  cd
+  329  cd w205
+  330  mkdir kafka
+  331  cd kafka/
+  332  git pull https://github.com/mids-w205-de-sola/project-2-cal-dortiz.git
+  333  git clone https://github.com/mids-w205-de-sola/project-2-cal-dortiz.git
+  334  ls
+  335  cd/ w205
+  336  cd w205
+  337  git clone https://github.com/mids-w205-de-sola/project-2-cal-dortiz.git
+  338  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp`
+  339  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  340  docker-compose ps
+  341  cd w205
+  342  cd week-5-in-class
+  343  docker-compose ps
+  344  jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  345  clear
+  346  docker-compose ps
+  347  docker-compose exec jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  348  dovker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  349  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  350  docker-compose down
+  351  docker-compose exec mis 2513fd5f85cc58046337b969670f5c8b324e08f58994c925
+  352  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  353  docker-compose up
+  354  wd 205
+  355  cd w205
+  356  cd project-1-cal-dortiz
+  357  git status
+  358  git add dortiz_project_1_part_3.ipynb
+  359  git commit -m"Add section where do subscribers using station live"
+  360  cd w/205
+  361  cd w205
+  362  cd project-2-cal-dortiz
+  363  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp -o data.json
+  364  cd w205/dortiz_project_1.ipynb
+  365  cd w205
+  366  cd project-1-cal-dortiz
+  367  git status
+  368  git add dortiz_project_1.ipynb
+  369  git status
+  370  git commit -m"Answer part two question 1"
+  371  bq query --use_legacy_sql=false '
+  372  SELECT start_station_name,
+  373  start_station_id,
+  374  SUM(CASE WHEN subscriber_type = "Subscriber" THEN 1 ELSE 0 END) AS Subscriber,
+  375  SUM(CASE WHEN subscriber_type = "Customer" THEN 1 ELSE 0 END) AS Customer
+  376  FROM bigquery-public-data.san_francisco_bikeshare.bikeshare_trips
+  377  WHERE start_station_id = end_station_id
+  378  GROUP BY start_station_name, start_station_id
+  379  ORDER BY Customer DESC
+  380  LIMIT 5'
+  381  bq query --use_legacy_sql=false '
+  382  SELECT start_station_name,
+  383  start_station_id,
+  384  SUM(CASE WHEN subscriber_type = "Subscriber" THEN 1 ELSE 0 END) AS Subscriber,
+  385  SUM(CASE WHEN subscriber_type = "Customer" THEN 1 ELSE 0 END) AS Customer
+  386  FROM bigquery-public-data.san_francisco_bikeshare.bikeshare_trips
+  387  WHERE start_station_id = end_station_id
+  388  GROUP BY start_station_name, start_station_id
+  389  ORDER BY Subscriber DESC
+  390  LIMIT 5'
+  391  cd w205/project-1-cal-dortiz
+  392  git status
+  393  git add dortiz_project_1.ipynb
+  394  git status
+  395  git commit -m"Update and answer Part 2 Question 2"
+  396  git status
+  397  bq query --use_legacy_sql=false '
+  398  SELECT EXTRACT(HOUR FROM start_date) As Hour,
+  399  COUNT(trip_id)
+  400  FROM bigquery-public-data.san_francisco.bikeshare_trips
+  401  WHERE subscriber_type = "Customer"
+  402  GROUP BY Hour
+  403  ORDER BY Hour DESC'
+  404  clear
+  405  cd w205
+  406  cd project-1-cal-dortiz
+  407  git status
+  408  git add dortiz_project_1.ipynb
+  409  git commit -m"Update and answer question 4 in part 2"
+  410  cd w205
+  411  cd project-1-cal-dortiz
+  412  git status
+  413  git add dortiz_project_1.ipynb
+  414  git status
+  415  git commit -m"Add problem statement, current deals, and initial questions"
+  416  git status
+  417  cd w205
+  418  cd project-1-cal
+  419  cd project-1-cal-dortiz
+  420  git status
+  421  git add dortiz_project_1.ipynb
+  422  git status
+  423  git commit -m "Update formatting"
+  424  git status
+  425  bq query --use_legacy_sql=false '
+  426  SELECT MIN(start_date) AS Min, MAX(start_date) AS Max
+  427  FROM bigquery-public-data.san_francisco.bikeshare_trips'
+  428  cd w205
+  429  cd project-1-cal-dortiz
+  430  git status
+  431  git add dortiz_project_1.ipynb
+  432  git status
+  433  git commit -m "Update part 2 question 2"
+  434  git status
+  435  bq query --use_legacy_sql=false '
+  436  SELECT EXTRACT(DAYOFWEEK FROM start_date) As Day,
+  437          COUNT(trip_id) AS Trips
+  438  FROM bigquery-public-data.san_francisco.bikeshare_trips
+  439  WHERE subscriber_type = "Customer"
+  440  GROUP BY Hour
+  441  ORDER BY Hour DESC'
+  442  bq query --use_legacy_sql=false '
+  443  SELECT EXTRACT(DAYOFWEEK FROM start_date) As Day,
+  444          COUNT(trip_id) AS Trips
+  445  FROM bigquery-public-data.san_francisco.bikeshare_trips
+  446  WHERE subscriber_type = "Customer"
+  447  GROUP BY Day
+  448  ORDER BY Day DESC'
+  449  bq query --use_legacy_sql=false '
+  450  SELECT start_station_name,
+  451         start_station_id,
+  452         end_station_name,
+  453         end_station_id,
+  454         count(trip_id) As count
+  455  FROM bigquery-public-data.san_francisco_bikeshare.bikeshare_trips
+  456  WHERE start_station_id != end_station_id AND subscriber_type = "Subscriber"
+  457  GROUP BY start_station_name, start_station_id, end_station_name, end_station_id
+  458  ORDER BY count DESC
+  459  LIMIT 5'
+  460  q query --use_legacy_sql=false '
+  461  SELECT COUNT(DISTINCT bike_number)
+  462  FROM bigquery-public-data.san_francisco.bikeshare_trips'
+  463  bq query --use_legacy_sql=false '
+  464  SELECT COUNT(DISTINCT bike_number)
+  465  FROM bigquery-public-data.san_francisco.bikeshare_trips'
+  466  clear
+  467  cd w205
+  468  cd project-1-cal-dortiz
+  469  git status
+  470  git add dortiz_project_1.ipynb
+  471  git status
+  472  git commit -m "Update to part 2 question 3"
+  473  cd w205
+  474  cd dortiz_project_1.ipynb
+  475  cd project-1-cal-dortiz
+  476  git status
+  477  git add dortiz_project_1.ipynb
+  478  git commit -m"Convert part 2 question 2 to static database"
+  479  git add dortiz_project_1.ipynb
+  480  git commit -m"Update part 2 question 1 to static database"
+  481  clear
+  482  bq query --use_legacy_sql=false '
+  483  SELECT subscriber_type,
+  484  count(trip_id) As count
+  485  FROM bigquery-public-data.san_francisco.bikeshare_trips 
+  486  GROUP BY subscriber_type
+  487  ORDER BY count DESC'
+  488  clear
+  489  git status
+  490  git add dortiz_project_1.ipynb'
+  491  git add dortiz_project_1.ipynb
+  492  git commit -m"Complete part 2 question 3 and update questions 4 and 5"
+  493  cd w205/kafka
+  494  docker-compose down
+  495  cd
+  496  cd w205/course-content-fall-2020
+  497  cd w250
+  498  cd
+  499  cd course-content-fall2020
+  500  git pull
+  501  SELECT start_station_name,
+  502  SUM(CASE WHEN subscriber_type = "Subscriber" THEN 1 ELSE 0 END) AS Subscriber,
+  503  SUM(CASE WHEN subscriber_type = "Customer" THEN 1 ELSE 0 END) AS Customer
+  504  FROM bigquery-public-data.san_francisco_bikeshare.bikeshare_trips
+  505  WHERE start_station_id = end_station_id
+  506  GROUP BY start_station_name, start_station_id
+  507  ORDER BY Customer DESC
+  508  LIMIT 5
+  509  clear
+  510  bq query --use_legacy_sql=false '
+  511  SELECT start_station_name,
+  512         start_station_id,
+  513  SUM(CASE WHEN subscriber_type = "Subscriber" THEN 1 ELSE 0 END) AS Subscriber,
+  514  SUM(CASE WHEN subscriber_type = "Customer" THEN 1 ELSE 0 END) AS Customer
+  515  FROM bigquery-public-data.san_francisco_bikeshare.bikeshare_trips
+  516  WHERE start_station_id = end_station_id
+  517  GROUP BY start_station_name, start_station_id
+  518  ORDER BY Customer DESC
+  519  LIMIT 5'
+  520  +--------------------------------------+------------------+------------+----------+
+  521  |          start_station_name          | start_station_id | Subscriber | Customer |
+  522  +--------------------------------------+------------------+------------+----------+
+  523  | Embarcadero at Sansome               |               60 |        321 |     2545 |
+  524  | Harry Bridges Plaza (Ferry Building) |               50 |        360 |     2004 |
+  525  | The Embarcadero at Sansome St        |                6 |        239 |     1585 |
+  526  | University and Emerson               |               35 |         71 |     1113 |
+  527  | Central Ave at Fell St               |               70 |        161 |     1029 |
+  528  +--------------------------------------+------------------+------------+----------+
+  529  clear
+  530  bq query --use_legacy_sql=false '
+  531  SELECT start_station_name,
+  532         start_station_id,
+  533  SUM(CASE WHEN subscriber_type = "Subscriber" THEN 1 ELSE 0 END) AS Subscriber,
+  534  SUM(CASE WHEN subscriber_type = "Customer" THEN 1 ELSE 0 END) AS Customer
+  535  FROM bigquery-public-data.san_francisco_bikeshare.bikeshare_trips
+  536  WHERE start_station_id = end_station_id
+  537  GROUP BY start_station_name, start_station_id
+  538  ORDER BY Subscriber DESC
+  539  LIMIT 5'
+  540  cd w205
+  541  cd kafka
+  542  cp ~/course-content-fall2020/06-Transforming-Data/docker-compose.yml docker-compose.yml
+  543  docker-compose up -d
+  544  docker-compose ps
+  545  docker-compose logs zookeeper
+  546  cd w205/project-2-cal-dortiz
+  547  cp  /course-content-fall2020/08-Querying-Data/docker-compose.yml docker-compose.yml
+  548  cp ~/course-content-fall2020/08-Querying-Data/docker-compose.yml docker-compose.yml
+  549  cd
+  550  clear
+  551  docker ps
+  552  docker run redis
+  553  q
+  554  -q
+  555  cd w205
+  556  cd project-2-cal-dortiz
+  557  git status
+  558  git commit -m"Added spark processing code"
+  559  git push
+  560  git status
+  561  git commit -m"Added initial spark code"
+  562  git status
+  563  git push
+  564  git status
+  565  git add pipeline-code.txt
+  566  git commit -m"Updated to add initial spark commands"
+  567  git push
+  568  cd w205
+  569  cd project-2-cal-dortiz
+  570  docker-compose up
+  571  docker-compose down
+  572  docker-compose up -d
+  573  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replicaiton-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  574  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replicaiton-factor 1    --if-not-exists docker-compose up -d
+  575  clear
+  576  docker-compose exec kafka   kafka-topics     --create     --topic test_results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  577  docker-compose down
+  578  docker compose up -d
+  579  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  580  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  581  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  582  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  583  docker-compose down
+  584  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  585  docker-compose down
+  586  escape
+  587  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  588  docker compose down
+  589  docker-compose down
+  590  docker-compose up
+  591  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  592  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  593  docker-compose exec kafka   kafka-topics     --describe     --topic test-results     --zookeeper zookeeper:32181
+  594  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  595      | jq '.[]' -c \
+  596      | kafkacat -P -b kafka:2902 -t test-results"
+  597  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  598      | jq '.[]' -c \
+  599      | kafkacat -P -b kafka:29092 -t test-results"
+  600  docker-compose exec kafka   kafka-topics     --describe     --topic test-results     --zookeeper zookeeper:32181
+  601  docker-compose down
+  602  git status
+  603  git add docker-compose.yml
+  604  git status
+  605  git commit -m"Add docker-compose file from WK8"
+  606  git status
+  607  git add pipeline-code.txt
+  608  git status
+  609  git commit -m"Raw Code for Kafka portion of the pipeline"
+  610  git status
+  611  git add assessment-attempts-20180128-121051-nested.json
+  612  git status
+  613  git commit -m"Data pull for analysis"
+  614  clear
+  615  docker-compose up
+  616  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  617  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  618  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  619      | jq '.[]' -c \
+  620      | kafkacat -P -b kafka:29092 -t test-results"
+  621  docker-compose exec spark pyspark
+  622  docker-compose down
+  623  docker compose up
+  624  clear
+  625  docker-compose up
+  626  ### Create Topic in Kafka
+  627  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  628  ### Create Topic in Kafka
+  629  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  630  ### Create Topic in Kafka
+  631  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  632  docker-compose down
+  633  cleaer
+  634  clear
+  635  docker-compose up
+  636  ### Create Topic in Kafka
+  637  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  638  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  639  docker-compose exec kafka   kafka-topics     --describe     --topic test-results     --zookeeper zookeeper:32181
+  640  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  641      | jq '.[]' -c \
+  642      | kafkacat -P -b kafka:29092 -t test-results"
+  643  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  644  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  645  docker-compose exec mids jupyternotebook --no-browser --port 8888 --ip 0.0.0.0 -- allow-root
+  646  docker-compse exec mids jupyter notebook --no-browser --port 888 --ip 0.0.0.0 --allow-root
+  647  docker-compose exec mids jupyter notebook --no-browser --port 888 --ip 0.0.0.0 --allow-root
+  648  docker-compose down
+  649  cd w205
+  650  cd project-2-cal-dortiz
+  651  docker-compose up
+  652  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  653  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root &
+  654  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 35.233.225.61 --allow-root
+  655  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  656  docker-compose down
+  657  cd
+  658  cd w205
+  659  cd week-5-in-class
+  660  docker-compose up
+  661  docker-compose down
+  662  cd w205
+  663  cd project-2-cal-dortiz
+  664  cd w20f
+  665  cd
+  666  cd w205
+  667  cd project-2-cal-dortiz
+  668  clear
+  669  docker-compose up
+  670  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  671  docker-compose exec mids jupyter notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root
+  672  docker-compose down
+  673  docker-compose up
+  674  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  675  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  676  docker-compose exec kafka   kafka-topics     --describe     --topic test-results     --zookeeper zookeeper:32181
+  677  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  678      | jq '.[]' -c \
+  679      | kafkacat -P -b kafka:29092 -t test-results"
+  680  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  681  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  682  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  683  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  684  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  685  docker-compose exec mids jupyter notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root
+  686  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  687  docker-compose down
+  688  clear
+  689  docker-compose up
+  690  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  691  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  692  docker-compose down
+  693  docker-compose up
+  694  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  695  cd w205
+  696  cd project-2-cal-dortiz
+  697  git status
+  698  git add docker-compose.yml
+  699  git commit -m"Added port information to spark containor"
+  700  git push
+  701  git add pipeline-code.txt
+  702  git commit -m"Updated port information and spark code"
+  703  git push
+  704  git status
+  705  git add Dan_Ortiz_assignment_2_report.ipynb
+  706  git add Dan_Ortiz_Assignment_2_report.ipynb 
+  707  git commit -m"Initialization of notebook"
+  708  git push
+  709  git status
+  710  git add derby.log
+  711  git commit -m"Add derby.log for Jupyter Notebook"
+  712  git push
+  713  git status
+  714  git add .ipynb_checkpoints/
+  715  git status
+  716  git commit -m"Adding checkpoints for Jupyter Notebook"
+  717  git status
+  718  git push
+  719  git status
+  720  git add metastore_db/
+  721  git commit metastore_db/ -m"Add metastore for Jupyer Notebook"
+  722  git rm metastore_db/
+  723  git status
+  724  git commit -m"removed metastore"
+  725  git push
+  726  git status
+  727  cd w205
+  728  cd project-2cal-dortiz
+  729  cd project-2-cal-dortiz/
+  730  docker-compose up
+  731  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  732  docker-compose down
+  733  docker-compose up
+  734  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  735  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  736  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  737      | jq '.[]' -c \
+  738      | kafkacat -P -b kafka:29092 -t test-results"
+  739  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8889 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  740  docker-compose down
+  741  docker-compose up
+  742  docker-compose exec kafka   kafka-topics     --create     --topic test-results     --partitions 1     --replication-factor 1    --if-not-exists     --zookeeper zookeeper:32181
+  743  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  744  docker-compose exec mids   bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  745      | jq '.[]' -c \
+  746      | kafkacat -P -b kafka:29092 -t test-results"
+  747  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  748  docker-compose down
+  749  git status
+  750  git add pipeline-code.txt 
+  751  git add dan_orti
+  752  git add Dan_Ortiz_Assignment_2_report.ipynb 
+  753  git add .ipynb_checkpoints/
+  754  git status
+  755  git commit -m"Completion of Schema, Explored with buisness questions to verify it is working"
+  756  git push
+  757  cd w205
+  758  cd project-2-cal-dortiz/
+  759  git status
+  760  git add Dan_Ortiz_Assignment_2_report.ipynb 
+  761  git add .ipynb_checkpoints/
+  762  git status
+  763  git add pipeline-code.txt 
+  764  git add der
+  765  git add derby.log 
+  766  git status
+  767  git commit -m"Jupyter Notebook Pyspark Setup"
+  768  git push
+  769  git status
+  770  git add
+  771  git add pi
+  772  wd 205
+  773  sd w205/project-2-cal-dortiz/
+  774  sd w205
+  775  cd w205
+  776  cd project-2-cal-dortiz/
+  777  clear
+  778  pipeline_startup.sh
+  779  ls
+  780  chmod+x pipeline_startup.sh
+  781  sudo chmod +x pipeline_startup.sh
+  782  pipeline_startup.sh
+  783  sh pipeline_startup.sh
+  784  docker-compose up
+  785  docker-compose exec kafka    kafka-topics      --create      --topic assessments      --partitions 1      --replication-factor 1     --if-not-exists      --zookeeper zookeeper:32181
+  786  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  787  docker-compose exec mids     bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  788      | jq '.[]' -c \
+  789      | kafkacat -P -b kafka:29092 -t assessments"
+  790  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  791  docker-compose down
+  792  sh pipeline_startup.sh
+  793  docker-compose up
+  794  docker-compose exec kafka    kafka-topics      --create      --topic assessments      --partitions 1      --replication-factor 1     --if-not-exists      --zookeeper zookeeper:32181
+  795  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  796  bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  797      | jq '.[]' -c \
+  798      | kafkacat -P -b kafka:29092 -t assessments"
+  799  docker-compose down
+  800  docker-compose up
+  801  docker-compose exec kafka    kafka-topics      --create      --topic assessments      --partitions 1      --replication-factor 1     --if-not-exists      --zookeeper zookeeper:32181
+  802  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  803  docker-compose exec mids     bash -c "cat /w205/project-2-cal-dortiz/assessment-attempts-20180128-121051-nested.json \
+  804      | jq '.[]' -c \
+  805      | kafkacat -P -b kafka:29092 -t assessments"
+  806  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root --notebook-dir=/w205/' pyspark
+  807  history > <user-name>-history.txt
+  808  history dortiz-history.txt
+  809  history > history_for_print.txt
+  810  clear
+  811  git status
+  812  cs w205/
+  813  cd w205/project-2-cal-dortiz/
+  814  git status
+  815  git add pipeline_startup.sh 
+  816  git status
+  817  git rm metastore_db/
+  818  git status
+  819  git add .ipynb
+  820  git add .ipynb_checkpoints/
+  821  git status
+  822  git commit -m"Converted start up script into a bash file"
+  823  git push
+  824  git status
+  825  git add .ipynb_checkpoints/
+  826  git add derby.log 
+  827  git add Dan_Ortiz_Assignment_2_report.ipynb 
+  828  git commit -m"Update to assignment 2 questions. Add Pandas DF for pretty tables."
+  829  git push
+  830  git status
+  831  git add dortiz_history.txt 
+  832  git remove dortiz_history.txt 
+  833  git rm dortiz_history.txt 
+  834  git status
+  835  cd w205/project-2-cal-dortiz/
+  836  sh pipeline_startup.sh 
+  837  docker-compose down
+  838  clear
+  839  sh pipeline_startup.sh
+  840  history > dortiz_history.txt
+  841  docker-compose down
+  842  cd w205/project-2-cal-dortiz/
+  843  sh pipeline_startup.sh
+  844  docker-compose down
+  845  history > dortiz-history.txt
+  846  history > dortiz_history.txt
