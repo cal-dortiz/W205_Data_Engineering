@@ -1,0 +1,30 @@
+// terminal 1
+cd w205/w205-project3/
+docker-compose ps
+docker-compose up -d
+docker-compose exec mids env FLASK_APP=/w205/w205-project3/game_api.py flask run --host 0.0.0.0
+
+// terminal 2
+cd w205/w205-project3/
+docker-compose ps
+docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+
+/format this
+while true; do docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/join_a_guild/1 docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/kill_enemy/2 docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/take_damage/3 docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/accepted_a_quest/1 docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/transaction/1001 docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/join_a_guild/1 docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/kill_enemy/2 docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/take_damage/3 docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/accepted_a_quest/3 docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/transaction/1001 sleep 10 done
+
+
+// terminal 3
+cd w205/w205-project3/
+docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+
+// terminal 4
+cd w205/w205-project3/
+docker-compose exec spark spark-submit /w205/w205-project3/write_data_batch.py
+docker-compose exec cloudera hadoop fs -ls /tmp/ 
+docker-compose exec cloudera hive
+
+docker-compose exec presto presto --server pr080 --catalog hive --schema default 
+/ presto
+show tables;
+describe TABLE_NAME;
+select * from TABLE_NAME...;
